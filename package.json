@@ -1,0 +1,21 @@
+{
+  "author": "taoxin",
+  "name": "syml_node",
+  "version": "0.0.0",
+  "dependencies": {
+    "coffee-script": "*",
+    "express": "4.0.0",
+    "body-parser":"1.0.2",
+    "ejs": "1.0.0",
+    "async":"*"
+  },
+  "scripts": {
+  },
+  "devDependencies": {
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "0.10.15",
+    "npm": "1.4.7"
+  }
+}
