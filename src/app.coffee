@@ -4,6 +4,7 @@ require 'coffee-script'
 
 express = require "express"
 bodyParser = require "body-parser"
+multipart = require "connect-multiparty"
 
 routes  = require "./routes"
 
@@ -11,10 +12,14 @@ routes  = require "./routes"
 app = express()
 
 #app.use express.methodOverride()
-app.use(bodyParser(
+#app.use(bodyParser(
+#  uploadDir:'/img',
+#  limit:10000000 #10M limit
+#  ))
+app.use(multipart(
   uploadDir:'/img',
   limit:10000000 #10M limit
-  ))
+))
 
 views_root =  "#{__dirname}/views"
 app.set('view engine', 'ejs')

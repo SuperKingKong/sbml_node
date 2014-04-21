@@ -8,3 +8,4 @@ module.exports = (app)->
 
   
   app.get('/image/upload', img.upload)
+  app.post('/image/upload', img.save)

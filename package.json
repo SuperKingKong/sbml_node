@@ -5,9 +5,10 @@
   "dependencies": {
     "coffee-script": "*",
     "express": "4.0.0",
-    "body-parser":"1.0.2",
+    "body-parser": "1.0.2",
+    "connect-multiparty": "1.0.3",
     "ejs": "1.0.0",
-    "async":"*"
+    "async": "*"
   },
   "scripts": {
   },
